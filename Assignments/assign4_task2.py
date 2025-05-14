@@ -1,0 +1,17 @@
+q=input("Enter text to write to the file: ")
+file1=open('docs.txt','w')
+file1.write(q)
+file1.write('\n')
+# print(re)
+file1.close()
+
+q1=input("Enter additional text to append: ")
+file1=open('docs.txt','a')
+file1.write(q1)
+# print(re)
+file1.close()
+
+file1=open('docs.txt','r')
+re=file1.read()
+print(re)
+file1.close()
